@@ -1,0 +1,11 @@
+{
+    "host": "localhost",
+    "username": "root",
+    "password": "root",
+    "database": "test_task",
+    "dialect": "mysql",
+    "pool": {
+        "maxConnections": 100,
+        "maxIdleTime": 1000
+    }
+}

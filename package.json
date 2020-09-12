@@ -1,0 +1,32 @@
+{
+  "name": "test_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "start:dev": "nodemon src/index.js",
+    "migrate": "node_modules/.bin/sequelize db:migrate --config src/config/db.config.json --migrations-path src/db/migrations --models-path src/db/models",
+    "create-migration": "node_modules/.bin/sequelize model:generate --name DefaultModelName --attributes defaultFieldName:string --config src/config/db.config.json --migrations-path src/db/migrations --models-path src/db/models"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.1.0",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0",
+    "uuid": "^8.3.0"
+  }
+}
